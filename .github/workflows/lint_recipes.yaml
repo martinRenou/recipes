@@ -36,7 +36,7 @@ jobs:
           set -e
 
           if [ "${{ github.event_name }}" = "pull_request" ]; then
-            BASE_REF="origin/main"
+            BASE_REF="origin/emscripten-3x"
             HEAD_REF="HEAD"
           else
             BASE_REF="HEAD~1"
